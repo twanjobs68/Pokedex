@@ -1,7 +1,8 @@
 * body{
-   background-image: url("/images/pokemon\ go.jpg");
+   background-image: url("/images/pokemon\ go2.jpg");
     margins: 10%;
-    padding: 10%;    
+    padding: 10%;  
+      
     
     
  }  */
@@ -17,16 +18,15 @@
 }
 
 .title{
-    display: flex;
+    
     justify-content: center;
     text-align: center;
     background-color: gold;
-    width: vw;
-    height: vh; 
-    
     text-transform:uppercase;
-    border-radius:50%;
-    padding-bottom: 15px ; /*center object in middle of */
+    border-radius:45%;
+    opacity: 0.80;
+    border: 2px solid blue;
+    padding-bottom: 10px ; /*center object in middle of */
 }    
 
 
@@ -37,6 +37,13 @@
     border: 3px solid black;
     border-radius: 15px;
     margin: 15px;
-    opacity: 0.90;
+    opacity: 0.70;
+    font-size: large;
+        
     
+}
+
+.bgColor{
+    margin-left: 15px;
+    font-size: medium;
 }

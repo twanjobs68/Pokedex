@@ -11,7 +11,8 @@
 //select the space data should populate to the DOM 
 //************************************************************************************** */
 $(() => {
-
+  //declare last type to compare with input to change color only when type changes.04/27/2021 0824a.m
+  var lastType = " ";
   //get info from form
   //2 arguments for on submit
   //call function in form above to get pokedata
@@ -27,7 +28,6 @@ $(() => {
     //get type of pokemone. 
     //type = pokemon id number. 
     //read through array of colors and change background to a color in array when type changes
-    //BUG:code does does not recognize when type stays the same
     //array of colors created
     //function to change background created
 
@@ -50,16 +50,11 @@ $(() => {
       $("#pokeNum").html(data.id);
 
       //assign current type to keep varialbe
-      var lastType = " ";
+      
       var keepType = data.types[0].type.name;
       console.log(keepType + " keeptype")
     
-      // var pokeTypes = ["bug", "dark", "dragon", "electric", "fairy", "fighting", "fire", "flying", "ghost", "grass",
-      //   "ground", "ice", "normal", "poison", "psychic", "rock", "steel", "water"]
-
-      //loop throught the array types and change color
-      //for(cntType=0; cntType <= pokeTypes.length; cntTypes++){
-      
+            
       if (keepType != lastType ) {
       //when submit is clicked, everything in the id info (onsubmit)background will change to color(red)
         $(".info").css("background-color", randomColors())
