@@ -1,0 +1,40 @@
+/* body{
+   
+    
+    
+    
+ }  */
+
+.headerContainer{
+    width: 100vw;
+    height: 20vh;
+    /*border: 1px solid black;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title{
+
+    justify-content: center;
+    text-align: center;
+    background-color: gold;
+    width: 25vw;
+    height: 10vh;
+    text-transform:uppercase;
+    border-radius: 50%;
+    padding-bottom: 15px ; /*center object in middle of */
+}    
+
+
+
+.info{
+    background-color: white;
+    text-transform: capitalize;
+    border: 3px solid black;
+    box-shadow: 10px 10px 5px color black;
+    margin: 15px;
+    opacity: 0.75;
+    
+}

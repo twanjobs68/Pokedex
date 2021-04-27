@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="headerContainer">
+        <div class="title">
+            <h1>Pokedex</h1>
+        </div>
+    </div>
+
+    <div class="info">
+        <h3>Pokemon Name: <span id="pokeName"></span> </h3>
+        <h3>Pokemon Type: <span id="pokeType"></span> </h3>
+        <h3>Pokemon Number/Id: <span id="pokeNum"></span> </h3>
+    </div>
+
+
+    <div class="bgColor">
+        <!--<form onsubmit = "newColor()">-->
+        <form>
+            <input type="text" placeholder="Enter Search Here: ">
+            <input type="submit" value="Get Pokemon Info">
+           <!-- <input type="submit" onsubmit="newColor()"  value="Get Pokemon Info">-->
+        </form>
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
